@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { projects, otherWorks } from "@/data/projects";
 import { profile, skills, timeline } from "@/data/profile";
@@ -7,7 +8,16 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
+      <section className="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28 lg:flex lg:items-center lg:justify-between lg:gap-12">
+        <Image
+          src="/images/profile.jpg"
+          alt={`${profile.name} 프로필 사진`}
+          width={354}
+          height={472}
+          priority
+          className="mb-8 h-auto w-28 rounded-2xl ring-1 ring-line sm:w-36 lg:order-last lg:mb-0 lg:w-60"
+        />
+        <div>
         <p className="font-semibold text-accent">{profile.role}</p>
         <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-ink sm:text-6xl sm:leading-[1.15]">
           {profile.headline[0]}
@@ -38,6 +48,7 @@ export default function Home() {
             </div>
           ))}
         </dl>
+        </div>
       </section>
 
       {/* Projects */}
@@ -147,8 +158,14 @@ export default function Home() {
       {/* About */}
       <section id="about" className="border-t border-line bg-soft/60 py-24">
         <div className="mx-auto max-w-6xl px-5">
-          <SectionTitle eyebrow="ABOUT" title="교육 · 수상" />
-          <ol className="relative max-w-3xl border-l border-line pl-8">
+          <SectionTitle eyebrow="ABOUT" title="소개 · 이력" />
+          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="space-y-5 text-[15px] leading-relaxed">
+            {profile.about.map((para) => (
+              <p key={para}>{para}</p>
+            ))}
+          </div>
+          <ol className="relative border-l border-line pl-8">
             {timeline.map((t) => (
               <li key={t.title} className="relative pb-10 last:pb-0">
                 <span className="absolute -left-[37px] top-1.5 size-3 rounded-full bg-accent ring-4 ring-accent-soft" />
@@ -158,6 +175,7 @@ export default function Home() {
               </li>
             ))}
           </ol>
+          </div>
         </div>
       </section>
 
