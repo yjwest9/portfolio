@@ -32,6 +32,13 @@ export default function Home() {
           >
             프로젝트 보기
           </Link>
+          <a
+            href="/files/resume.pdf"
+            download="서영준_이력서.pdf"
+            className="rounded-lg px-4 py-2 text-sm font-semibold text-ink ring-1 ring-line transition hover:bg-soft"
+          >
+            이력서 PDF
+          </a>
           <ExternalLink href={profile.github}>GitHub</ExternalLink>
           <a
             href={`mailto:${profile.email}`}
