@@ -119,7 +119,7 @@ export const projects: Project[] = [
     contribution: "전체 커밋 422개 중 395개",
     stack: ["Next.js 16", "TypeScript", "Laravel 12", "Sanctum", "MySQL", "Toss Payments", "GitHub Actions", "Vercel"],
     links: [
-      { label: "서비스 바로가기", href: "https://vegetable-garden-planner.vercel.app" },
+      { label: "서비스 바로가기", href: "https://wa26b02.yjjob.kr" },
       { label: "GitHub", href: "https://github.com/vegetable-garden-planner/vegetable-garden-planner" },
     ],
     cover: { src: "/images/simeobom/landing.webp", alt: "심어봄 랜딩 페이지" },
@@ -154,7 +154,7 @@ export const projects: Project[] = [
           "SESSION_DOMAIN을 고정하지 않고, SameSite·Secure 쿠키 설정을 운영 환경에 맞게 조정",
           "OAuth 리디렉션 URI를 브라우저가 시작한 Vercel 출처로 통일",
         ],
-        result: "Vercel 배포 화면에서 이메일·Google·카카오 로그인과 회원가입이 정상 동작함을 확인했습니다.",
+        result: "Vercel 배포 화면에서 이메일·Google·카카오 로그인과 회원가입이 정상 동작함을 확인했습니다. 이후 서비스는 학교 서버(wa26b02.yjjob.kr)로 이전해 운영 중입니다.",
       },
       {
         title: "두 곳에서 동시에 수정하면 앞 내용이 사라지는 문제 예방",
