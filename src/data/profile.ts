@@ -69,7 +69,7 @@ export const timeline = [
     desc: "생성형 AI 기반 UI/UX디자인 & 웹앱 콘텐츠 개발 과정 (IT·디자인콘텐츠과)",
   },
   {
-    period: "2026.06",
+    period: "2026.07",
     title: "제18회 송암학생작품대전 최우수상",
     desc: "StockBattle (UIUX웹앱개발 과정 출품)",
   },
